@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.fade-in {
+  visibility: hidden;
+  transform: translate(0px,88px);
+  transition: all 1s linear;
+}
+
+.visible {
+  visibility: visible;
+  transform: translate(0px,0px);
+}

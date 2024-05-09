@@ -1,8 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
+import Wp from './wp.png'
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [showContent, setShowContent] = useState(false);
+
+  // useEffect(() => {
+  //   const all_time = document.getElementById("all_time");
+
+  //   const wp = "";
+  //   wp.setAttribute("class", "transition")
+
+  // }, [])
+  useEffect(() => {
+    setShowContent(true);
+  }, [])
+
   return (
     <div className="App">
       <header className="App-header">
@@ -10,19 +25,23 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <div >
+        <div className={`fade-in ${showContent ? "visible" : ""}`} style={{
+          position: "fixed",
+          bottom: "22px",
+          right: "135px",
+        }}>
+          <a href='https://wa.me/918320066228' target='_blank' >
+            <img src={Wp} width="60px" style={{ backgroundColor: "#fff", borderRadius: "50%" }} />
+          </a>
+        </div>
+      </div>
+
       <MessengerCustomerChat
         pageId="304588992738316"
         appId="1896806314111034"
-      />,
+      />
     </div>
   );
 }
