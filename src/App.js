@@ -29,7 +29,7 @@ function App() {
       <div >
         <div className={`fade-in ${showContent ? "visible" : ""}`} style={{
           position: "fixed",
-          bottom: "22px",
+          bottom: "20px",
           right: "135px",
         }}>
           <a href='https://wa.me/918320066228' target='_blank' >
