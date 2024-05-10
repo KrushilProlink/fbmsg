@@ -26,7 +26,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
       </header>
-      <div >
+      {/* <div >
         <div className={`fade-in ${showContent ? "visible" : ""}`} style={{
           position: "fixed",
           bottom: "20px",
@@ -36,7 +36,7 @@ function App() {
             <img src={Wp} width="60px" style={{ backgroundColor: "#fff", borderRadius: "50%" }} />
           </a>
         </div>
-      </div>
+      </div> */}
 
       <MessengerCustomerChat
         pageId="304588992738316"
